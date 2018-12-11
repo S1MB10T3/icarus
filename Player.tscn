@@ -4103,7 +4103,7 @@ use_filter = true
 font_data = ExtResource( 13 )
 _sections_unfolded = [ "Extra Spacing", "Settings" ]
 
-[node name="Player" type="KinematicBody"]
+[node name="Player" type="KinematicBody" index="0"]
 
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -4484,7 +4484,7 @@ transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, -0.3
 visible = false
 layers = 1
 light_color = Color( 1, 0.915375, 0.769531, 1 )
-light_energy = 0.8
+light_energy = 0.75
 light_indirect_energy = 1.0
 light_negative = false
 light_specular = 0.5
@@ -4496,11 +4496,11 @@ shadow_bias = 0.15
 shadow_contact = 0.0
 shadow_reverse_cull_face = false
 editor_only = false
-spot_range = 30.0
-spot_attenuation = 2.0
+spot_range = 200.0
+spot_attenuation = 1.68179
 spot_angle = 50.0
 spot_angle_attenuation = 1.0
-_sections_unfolded = [ "Light", "Spot", "Transform" ]
+_sections_unfolded = [ "Editor", "Light", "Shadow", "Spot", "Transform" ]
 
 [node name="Grenade_Toss_Pos" type="Spatial" parent="Rotation_Helper" index="5"]
 

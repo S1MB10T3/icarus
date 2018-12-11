@@ -203,7 +203,7 @@ environment = SubResource( 2 )
 
 [node name="Main_Menu_Camera" type="Camera" parent="Background_Animation" index="1"]
 
-transform = Transform( 1, -1.74846e-007, 1.74846e-007, 1.74846e-007, 1, -1.74846e-007, -1.74846e-007, 1.74846e-007, 1, 0, 0, 0 )
+transform = Transform( 1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 0, 0, 0 )
 keep_aspect = 1
 cull_mask = 1048575
 environment = null
