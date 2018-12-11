@@ -1,11 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Main_Menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/lightblue_equirectangular.png" type="Texture" id=2]
 [ext_resource path="res://assets/Titillium-Regular.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://FPS_project_icon.png" type="Texture" id=4]
-[ext_resource path="res://assets/Space_Level_Objects/SpaceThumbnail.png" type="Texture" id=5]
-[ext_resource path="res://assets/Ruin_Level_Objects/RuinsThumbnail.png" type="Texture" id=6]
 
 [sub_resource type="PanoramaSky" id=1]
 
@@ -231,7 +229,6 @@ _sections_unfolded = [ "Playback Options" ]
 
 [node name="Start_Menu" type="Panel" parent="." index="1"]
 
-editor/display_folded = true
 modulate = Color( 1, 1, 1, 0.901961 )
 self_modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.0
@@ -272,8 +269,7 @@ custom_fonts/font = SubResource( 6 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 3
-text = "Godot 3
-FPS Tutorial"
+text = "Icarus"
 align = 1
 valign = 1
 percent_visible = 1.0
@@ -308,43 +304,16 @@ flat = false
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="Button_Open_Godot" type="Button" parent="Start_Menu" index="2"]
+[node name="Button_Options" type="Button" parent="Start_Menu" index="2"]
 
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -155.0
-margin_top = -190.0
+margin_top = -188.0
 margin_right = 155.0
-margin_bottom = -140.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 6 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Open Godot website"
-flat = false
-align = 1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Button_Options" type="Button" parent="Start_Menu" index="3"]
-
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -155.0
-margin_top = -130.0
-margin_right = 155.0
-margin_bottom = -80.0
+margin_bottom = -138.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -362,16 +331,16 @@ flat = false
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="Button_Quit" type="Button" parent="Start_Menu" index="4"]
+[node name="Button_Quit" type="Button" parent="Start_Menu" index="3"]
 
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -155.0
-margin_top = -70.0
+margin_top = -129.0
 margin_right = 155.0
-margin_bottom = -20.0
+margin_bottom = -79.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -468,6 +437,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="Button_Level_Testing_Area" type="Button" parent="Level_Select_Menu" index="2"]
 
+editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
@@ -511,98 +481,6 @@ texture = ExtResource( 4 )
 expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
-
-[node name="Button_Level_Space" type="Button" parent="Level_Select_Menu" index="3"]
-
-anchor_left = 0.5
-anchor_top = 0.0
-anchor_right = 0.5
-anchor_bottom = 0.0
-margin_left = -70.0
-margin_top = 275.0
-margin_right = 70.0
-margin_bottom = 415.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-flat = false
-align = 1
-_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Material", "Mouse", "Pause", "Rect", "Size Flags", "Theme", "Visibility" ]
-
-[node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Level_Space" index="0"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -60.0
-margin_top = -60.0
-margin_right = 60.0
-margin_bottom = 60.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 5 )
-expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Visibility" ]
-
-[node name="Button_Level_Ruins" type="Button" parent="Level_Select_Menu" index="4"]
-
-anchor_left = 0.5
-anchor_top = 0.0
-anchor_right = 0.5
-anchor_bottom = 0.0
-margin_left = -70.0
-margin_top = 433.0
-margin_right = 70.0
-margin_bottom = 573.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-flat = false
-align = 1
-_sections_unfolded = [ "Rect" ]
-
-[node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Level_Ruins" index="0"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -60.0
-margin_top = -60.0
-margin_right = 60.0
-margin_bottom = 60.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 6 )
-expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Visibility" ]
 
 [node name="Options_Menu" type="Panel" parent="." index="3"]
 

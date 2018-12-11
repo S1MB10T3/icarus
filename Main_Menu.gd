@@ -20,15 +20,14 @@ func _ready():
 	
 	# Connect all of the start menu buttons
 	$Start_Menu/Button_Start.connect("pressed", self, "start_menu_button_pressed", ["start"])
-	$Start_Menu/Button_Open_Godot.connect("pressed", self, "start_menu_button_pressed", ["open_godot"])
 	$Start_Menu/Button_Options.connect("pressed", self, "start_menu_button_pressed", ["options"])
 	$Start_Menu/Button_Quit.connect("pressed", self, "start_menu_button_pressed", ["quit"])
 	
 	# Connect all of the level select menu buttons
 	$Level_Select_Menu/Button_Back.connect("pressed", self, "level_select_menu_button_pressed", ["back"])
 	$Level_Select_Menu/Button_Level_Testing_Area.connect("pressed", self, "level_select_menu_button_pressed", ["testing_scene"])
-	$Level_Select_Menu/Button_Level_Space.connect("pressed", self, "level_select_menu_button_pressed", ["space_level"])
-	$Level_Select_Menu/Button_Level_Ruins.connect("pressed", self, "level_select_menu_button_pressed", ["ruins_level"])
+
+
 	
 	# Connect all of the options menu buttons
 	$Options_Menu/Button_Back.connect("pressed", self, "options_menu_button_pressed", ["back"])
@@ -51,8 +50,6 @@ func start_menu_button_pressed(button_name):
 	if button_name == "start":
 		level_select_menu.visible = true
 		start_menu.visible = false
-	elif button_name == "open_godot":
-		OS.shell_open("https://godotengine.org/")
 	elif button_name == "options":
 		options_menu.visible = true
 		start_menu.visible = false
@@ -67,12 +64,6 @@ func level_select_menu_button_pressed(button_name):
 	elif button_name == "testing_scene":
 		set_mouse_and_joypad_sensitivity()
 		get_node("/root/Globals").load_new_scene("res://Death_Row_Level.tscn")
-	elif button_name == "space_level":
-		set_mouse_and_joypad_sensitivity()
-		get_node("/root/Globals").load_new_scene(space_level_scene)
-	elif button_name == "ruins_level":
-		set_mouse_and_joypad_sensitivity()
-		get_node("/root/Globals").load_new_scene("res://Testing_Area.tscn")
 
 
 func options_menu_button_pressed(button_name):

@@ -1,6 +1,7 @@
 extends Spatial
 var enemy = preload("res://Enemy.tscn")
 var spawn_timer = 0
+
 var enemies_spawned = 1
 var player = null
 
