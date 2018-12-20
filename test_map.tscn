@@ -99,6 +99,7 @@ environment = SubResource( 3 )
 
 [node name="Cube" parent="." index="1"]
 
+editor/display_folded = true
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.00270176, 5.43801, -0.0323281 )
 material/0 = ExtResource( 2 )
 material/1 = ExtResource( 2 )
@@ -126,6 +127,7 @@ disabled = false
 
 [node name="Cylinder.001" parent="." index="2"]
 
+editor/display_folded = true
 material/0 = ExtResource( 3 )
 _sections_unfolded = [ "material" ]
 
