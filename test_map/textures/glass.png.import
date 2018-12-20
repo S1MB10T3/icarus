@@ -2,13 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/glass.png-e530dd42b3a754ba58144d911c80e2be.s3tc.stex"
-path.etc2="res://.import/glass.png-e530dd42b3a754ba58144d911c80e2be.etc2.stex"
+path.s3tc="res://.import/glass.png-d3c38df6b11954a31a22240071c49ad5.s3tc.stex"
+path.etc2="res://.import/glass.png-d3c38df6b11954a31a22240071c49ad5.etc2.stex"
 
 [deps]
 
-source_file="res://textures/glass.png"
-dest_files=[ "res://.import/glass.png-e530dd42b3a754ba58144d911c80e2be.s3tc.stex", "res://.import/glass.png-e530dd42b3a754ba58144d911c80e2be.etc2.stex" ]
+source_file="res://test_map/textures/glass.png"
+dest_files=[ "res://.import/glass.png-d3c38df6b11954a31a22240071c49ad5.s3tc.stex", "res://.import/glass.png-d3c38df6b11954a31a22240071c49ad5.etc2.stex" ]
 
 [params]
 

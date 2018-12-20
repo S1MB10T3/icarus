@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/floor.jpg-7ee049b017d61027b587b573f8c11f3f.stex"
+path="res://.import/Baked Wall.png-74af8610a41418a7f66c64a697a9adff.stex"
 
 [deps]
 
-source_file="res://textures/floor.jpg"
-dest_files=[ "res://.import/floor.jpg-7ee049b017d61027b587b573f8c11f3f.stex" ]
+source_file="res://test_map/textures/Baked Wall.png"
+dest_files=[ "res://.import/Baked Wall.png-74af8610a41418a7f66c64a697a9adff.stex" ]
 
 [params]
 
